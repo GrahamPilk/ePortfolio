@@ -1,11 +1,11 @@
 FROM node:18-alpine
 
 
-WORKDIR /graha/Documents/PersonalProjects/ePortfolio
+WORKDIR /graha/Documents/PersonalProjects/ePortfolio/src
 
 # Copy app package, json files, local directories to the current local directory of our docker image (/app)
 COPY ./src ./src
-COPY ./public ./public
+COPY package.json ./
 
 # RUN installs node packages or needed dependencies for next.js and what im doing
 RUN npm install \
@@ -17,7 +17,7 @@ RUN npm install \
 EXPOSE 3000
 
 # starts the app using serve command 
-CMD ["serve", "-s", "build"]
+CMD npm run dev
 
 
 
