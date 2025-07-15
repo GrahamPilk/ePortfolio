@@ -1,7 +1,7 @@
 FROM node:18-alpine
 
 
-WORKDIR /app
+WORKDIR /graha/Documents/PersonalProjects/ePortfolio
 
 # Copy app package, json files, local directories to the current local directory of our docker image (/app)
 COPY ./src ./src
