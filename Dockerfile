@@ -2,15 +2,25 @@ FROM node:18-alpine
 
 WORKDIR /graha/Documents/PersonalProjects/ePortfolio/src/app
 
-# Copy app package, json files, local directories to the current local directory of our docker image (/app)
-COPY ./src ./src
+# Copy package files
 COPY package.json package-lock.json ./
 
-# RUN installs node packages or needed dependencies for next.js and what im doing
-RUN npm install 
+# Install dependencies
+RUN npm install
 
-# Final configuration
+# Copy source code
+COPY ./src ./src
+
+# Build the application
+RUN npm run build
+
+# Install serve globally
+RUN npm install -g serve
+
+# Remove node_modules to reduce image size (only for production)
+RUN rm -rf node_modules
+
 EXPOSE 3000
 
-# Starts the app using serve command
-CMD ["npm", "run", "dev"]
+# Serve the built application
+CMD ["serve", "-s", "out", "-l", "3000"]
