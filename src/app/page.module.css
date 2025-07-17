@@ -6,14 +6,56 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  /* Remove grid layout for vertical stacking */
+  display: block;
+  min-height: 100vh;
+  padding: 0;
   font-family: var(--font-geist-sans);
+}
+
+.sectionWhite {
+  background: #fff;
+  color: #2563eb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.sectionBlue {
+  background: #2563eb;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+
+}
+
+.sectionWhite h1, .sectionBlue h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.sectionBlue p, .sectionWhite p {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -164,4 +206,72 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.introTitle {
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
+}
+
+.introTopP {
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
+}
+
+.ovalTab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 999px;
+  padding: 18px 48px;
+  min-width: 320px;
+  min-height: 64px;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.12);
+  margin: 32px 0;
+  opacity: 1;
+  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
+}
+
+.ovalLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  transition: background 0.2s;
+}
+
+.ovalLink:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.ovalTabHidden {
+  opacity: 0;
+  transform: translateX(-120%) scale(0.8);
+  pointer-events: none;
+}
+
+.ovalTabCenter {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  position: static;
+  pointer-events: auto;
+}
+
+.ovalTabRight {
+  opacity: 1;
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  left: auto;
+  transform: translateY(-50%) scale(1);
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.18);
+  pointer-events: auto;
 }
