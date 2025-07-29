@@ -238,16 +238,25 @@ a.secondary {
 .ovalLink {
   color: #fff;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 8px 20px;
-  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 50%;
   background: rgba(255,255,255,0.08);
-  transition: background 0.2s;
+  transition: all 0.2s ease;
+  width: 48px;
+  height: 48px;
 }
 
 .ovalLink:hover {
   background: rgba(255,255,255,0.18);
+  transform: scale(1.1);
+}
+
+.ovalLink svg {
+  width: 24px;
+  height: 24px;
 }
 
 .ovalTabHidden {
