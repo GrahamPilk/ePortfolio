@@ -210,12 +210,10 @@ a.secondary {
 
 .introTitle {
   text-align: center;
-  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
 }
 
 .introTopP {
   text-align: center;
-  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
 }
 
 .ovalTab {
@@ -233,7 +231,8 @@ a.secondary {
   box-shadow: 0 4px 24px rgba(37,99,235,0.12);
   margin: 32px 0;
   opacity: 1;
-  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s cubic-bezier(0.77,0,0.175,1);
+  transition: all 1.5s cubic-bezier(0.77,0,0.175,1);
+  will-change: transform, opacity;
 }
 
 .ovalLink {
@@ -264,6 +263,8 @@ a.secondary {
   pointer-events: auto;
 }
 
+
+
 .ovalTabRight {
   opacity: 1;
   position: fixed;
@@ -272,6 +273,9 @@ a.secondary {
   left: auto;
   transform: translateY(-50%) scale(1);
   z-index: 1000;
-  box-shadow: 0 4px 24px rgba(37,99,235,0.18);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.25);
   pointer-events: auto;
+  margin: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(37, 99, 235, 0.95);
 }
