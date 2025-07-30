@@ -1,3 +1,39 @@
+/* Triangles Animation */
+.trianglesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.triangle {
+  position: absolute;
+  right: -40px;
+  opacity: 0.7;
+  animation-name: floatLeft;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes floatLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-110vw);
+    opacity: 0.3;
+  }
+}
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);

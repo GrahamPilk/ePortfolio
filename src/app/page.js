@@ -1,6 +1,39 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
+
+function TrianglesAnimation({ count = 10 }) {
+  // Generate random triangle properties
+  const triangles = Array.from({ length: count }).map((_, i) => {
+    const size = Math.random() * 20 + 10; // 10-30px
+    const top = Math.random() * 80 + 10; // 10-90%
+    const duration = Math.random() * 4 + 4; // 4-8s
+    const delay = Math.random() * 4; // 0-4s
+    const rotation = Math.random() * 360; // 0-360deg
+    return { size, top, duration, delay, rotation, key: i };
+  });
+  return (
+    <div className={styles.trianglesContainer}>
+      {triangles.map(({ size, top, duration, delay, rotation, key }) => (
+        <svg
+          key={key}
+          className={styles.triangle}
+          style={{
+            top: `${top}%`,
+            width: `${size}px`,
+            height: `${size}px`,
+            animationDuration: `${duration}s`,
+            animationDelay: `${delay}s`,
+            transform: `rotate(${rotation}deg)`
+          }}
+          viewBox="0 0 30 30"
+        >
+          <polygon points="15,0 30,30 0,30" fill="#3498db" />
+        </svg>
+      ))}
+    </div>
+  );
+}
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -18,6 +51,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
+      <TrianglesAnimation count={12} />
       <section className={styles.sectionWhite}>
         <div className={styles.introContainer}>
           <h1 className={styles.introTitle}>Hi, I am Graham Pilkington!</h1>
