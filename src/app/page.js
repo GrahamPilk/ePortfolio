@@ -89,7 +89,40 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.sectionBlue}>
-        <h1>About Me</h1>
+        <div className={styles.aboutMeRow}>
+          <div className={styles.aboutMeTextBlock}>
+            <h1 className={styles.aboutMeTitleModern}>About Me</h1>
+            <p className={styles.aboutMeBullet}><span role="img" aria-label="wave">👋</span> Hello! My name is Graham Pilkington and I am a third year Computer Science Student attending Miami University.</p>
+            <p className={styles.aboutMeBullet}><span role="img" aria-label="calendar">📅</span> I have previously interned at Bendix this past summer, with roles as a Computer Science Engineer and Test Engineer.</p>
+            <p className={styles.aboutMeBullet}><span role="img" aria-label="rocket">🚀</span> This year I am working on multiple projects such as an AI-led stock analyzer, a golf tracker, and organizing a self-entrepreneurial club.</p>
+            <p className={styles.aboutMeBullet}><span role="img" aria-label="star">💥</span> Currently, I am very interested in autonomous driving, Secure Software Development LifeCycle (SSDLC), and CI/CD pipeline.</p>
+            <p className={styles.aboutMeBullet}><span role="img" aria-label="email">📧</span> You can reach out to me on my contact page or schedule a call!</p>
+          </div>
+          <div className={styles.aboutMeImageModernWrapper}>
+            <img src="/HeadShot.jpg" alt="Graham Pilkington" className={styles.aboutMeImageModern} />
+          </div>
+        </div>
+        <h2 className={styles.educationTitle}>Education</h2>
+        <div className={styles.educationCardsRow}>
+          <div className={styles.educationCard}>
+            <div className={styles.educationCardIcon}>🎓</div>
+            <div>
+              <div className={styles.educationCardSchool}>Miami University</div>
+              <div className={styles.educationCardDegree}>B.S. in Computer Science</div>
+              <div className={styles.educationCardDates}>Aug 2023 – Present</div>
+              <div className={styles.educationCardHighlight}>GPA: 3.8/4.0</div>
+            </div>
+          </div>
+          <div className={styles.educationCard}>
+            <div className={styles.educationCardIcon}>🏫</div>
+            <div>
+              <div className={styles.educationCardSchool}>Avon Lake High Scool</div>
+              <div className={styles.educationCardDegree}>High School Diploma</div>
+              <div className={styles.educationCardDates}>Aug 2019 – May 2023</div>
+              <div className={styles.educationCardHighlight}>GPA: 3.7/4.0</div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className={styles.sectionWhite}>
         <h1>Tech Arsenal</h1>

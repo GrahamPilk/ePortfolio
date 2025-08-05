@@ -194,6 +194,250 @@
   line-height: 1.6;
 }
 
+.aboutMeWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 48px auto;
+  z-index: 1;
+}
+
+.aboutMeText {
+  flex: 2;
+  color: #fff;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.aboutMeTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #2563eb;
+  margin-bottom: 24px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  letter-spacing: 0.05em;
+}
+
+.aboutMeText p {
+  margin: 18px 0;
+  font-size: 1.25rem;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.aboutLink {
+  color: #7ca7ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.aboutMeImageWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+}
+
+.aboutMeImage {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: url('/profile.jpg') center/cover no-repeat, #222;
+  box-shadow: 0 0 32px 4px #2563eb, 0 0 0 8px #222;
+  border: 4px solid #2563eb;
+  margin: 0 auto;
+}
+
+.aboutMeWrapperCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 48px auto;
+  z-index: 1;
+}
+
+.aboutMeImageWrapperCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.aboutMeImageCentered {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #222;
+  box-shadow: 0 0 32px 4px #2563eb, 0 0 0 8px #222;
+  border: 4px solid #2563eb;
+  object-fit: cover;
+}
+
+.aboutMeTextCentered {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.aboutMeRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 64px auto 32px auto;
+  z-index: 1;
+}
+
+.aboutMeTextBlock {
+  flex: 2;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutMeTitleModern {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #1de9e9;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.aboutMeParagraph {
+  color: #bfc9d1;
+  font-size: 0.5rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.aboutMeBullet {
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 18px 0 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.aboutMeBullet:last-child {
+  margin-bottom: 0;
+}
+
+.aboutMeImageModernWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeImageModern {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #222;
+  box-shadow: 0 0 32px 4px #2563eb, 0 0 0 8px #222;
+  border: 4px solid #2563eb;
+  object-fit: cover;
+}
+
+.educationTitle {
+  text-align: center;
+  color: #1de9e9;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 48px 0 24px 0;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.educationCardsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 48px auto;
+}
+
+.educationCard {
+  background: #181f2a;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  min-width: 280px;
+  max-width: 350px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.educationCardIcon {
+  font-size: 2.2rem;
+  margin-right: 12px;
+  color: #1de9e9;
+  flex-shrink: 0;
+}
+
+.educationCardSchool {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.educationCardDegree {
+  color: #bfc9d1;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.educationCardDates {
+  color: #7ca7ff;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.educationCardHighlight {
+  color: #1de9e9;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .ovalTab {
@@ -210,5 +454,60 @@
   .ovalLink svg {
     width: 20px;
     height: 20px;
+  }
+  .aboutMeImageCentered {
+    width: 140px;
+    height: 140px;
+  }
+  .aboutMeTextCentered {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutMeWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .aboutMeImageWrapper {
+    min-width: 180px;
+  }
+  .aboutMeImage {
+    width: 180px;
+    height: 180px;
+  }
+  .aboutMeTitle {
+    font-size: 2.2rem;
+  }
+  .aboutMeText {
+    font-size: 1rem;
+  }
+  .aboutMeRow {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .aboutMeImageModern {
+    width: 140px;
+    height: 140px;
+  }
+  .aboutMeTextBlock {
+    align-items: center;
+    text-align: center;
+  }
+  .aboutMeParagraph {
+    text-align: center;
+  }
+  .educationCardsRow {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .educationCard {
+    min-width: 220px;
+    max-width: 95vw;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
