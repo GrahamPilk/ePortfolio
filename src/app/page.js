@@ -217,7 +217,59 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.sectionWhite}>
-        <h1>Projects</h1>
+        <div className={styles.projectsWrapper}>
+          <div className={styles.projectsGrid}>
+            <div className={styles.projectCard}>
+              <div className={styles.projectHeader}>
+                <span className={styles.projectTitle}>Quant Ticker</span>
+                <span className={styles.projectIcon}>💹</span>
+              </div>
+              <div className={styles.projectMeta}>July 2025 – Present | Fintech</div>
+              <div className={styles.projectDesc}>
+                An intelligent financial assistant that analyzes uploaded stock chart screenshots using a powerful AI API. Instantly receive a comprehensive summary, overall confidence and trend assessment, support and resistance levels, detected chart patterns, trading recommendations, and a detailed analysis. The platform also features dedicated sections for options strategies, as well as the latest news and earnings reports. 
+              </div>
+              <div className={styles.projectStackTitle}>Tech Stack:</div>
+              <div className={styles.projectStackRow}>
+                <span className={styles.projectStackPill}>Next.js</span>
+                <span className={styles.projectStackPill}>OpenAI API</span>
+                <span className={styles.projectStackPill}>Tailwind CSS</span>
+                <span className={styles.projectStackPill}>Stripe</span>
+              </div>
+              <div className={styles.projectLinksRow}>
+                <a href="https://github.com/GrahamPilk/Quant-Ticker" target="_blank" rel="noopener noreferrer" className={styles.projectLinkAnchor}>
+                  <span className={styles.projectLinkIcon}>💻</span> Code
+                </a>
+              </div>
+            </div>
+            <div className={styles.projectCard}>
+              <div className={styles.projectHeader}>
+                <span className={styles.projectTitle}>EPortfolio</span>
+                <span className={styles.projectIcon}>⚛️</span>
+              </div>
+              <div className={styles.projectMeta}>July 2025 – Present | Full Stack</div>
+              <div className={styles.projectDesc}>
+                A modern, responsive personal portfolio website built with Next.js and React. This site showcases my projects, technical skills, and professional experience in a visually engaging format. It features dynamic sections for education, experience, and a tech arsenal, as well as a custom-designed projects grid. The site is containerized with Docker for easy deployment and is hosted on Vercel, leveraging CI/CD workflows via GitHub for seamless updates and scalability.
+              </div>
+              <div className={styles.projectStackTitle}>Tech Stack:</div>
+              <div className={styles.projectStackRow}>
+                <span className={styles.projectStackPill}>Next.js</span>
+                <span className={styles.projectStackPill}>React</span>
+                <span className={styles.projectStackPill}>Docker</span>
+                <span className={styles.projectStackPill}>Vercel</span>
+                <span className={styles.projectStackPill}>Github</span>
+                <span className={styles.projectStackPill}>Tailwind</span>
+              </div>
+              <div className={styles.projectLinksRow}>
+                <a href="https://github.com/GrahamPilk/ePortfolio" target="_blank" rel="noopener noreferrer" className={styles.projectLinkAnchor}>
+                  <span className={styles.projectLinkIcon}>💻</span> Code
+                </a>
+                <span className={styles.projectLinkIcon}>🔗</span> Live
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
       </section>
       <section className={styles.sectionBlue}>
         <div className={styles.contactContainer}>
