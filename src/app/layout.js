@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Graham DevOps",
+  title: "Graham Pilkington",
   description: "My eportfolio",
 };
 
