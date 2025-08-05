@@ -620,3 +620,200 @@
     padding: 7px 14px;
   }
 }
+
+.experienceWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 0 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experienceTitle {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.experienceSubtitle {
+  color: #bfc9d1;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.experienceTimeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  padding-left: 32px;
+}
+
+.experienceTimeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #1de9e9 0%, #232b3a 100%);
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+
+.experienceDot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1de9e9;
+  box-shadow: 0 0 16px #1de9e9cc;
+  margin-right: 24px;
+  margin-top: 8px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.experienceCard {
+  background: #181f2a;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  margin-bottom: 0;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  color: #eaf6fb;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experienceHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.experienceCompanyIcon {
+  font-size: 1.5rem;
+  color: #1de9e9;
+  margin-right: 4px;
+}
+
+.experienceCompany {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.experienceLocation {
+  color: #bfc9d1;
+  font-size: 1rem;
+  margin-left: 6px;
+}
+
+.experienceRole {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 8px 0 2px 0;
+}
+
+.experienceDate {
+  color: #bfc9d1;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.experienceDateIcon {
+  margin-right: 6px;
+}
+
+.experienceDesc {
+  color: #bfc9d1;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  margin-top: 2px;
+}
+
+.experienceTagsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.experienceTag {
+  background: #232b3a;
+  color: #1de9e9;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  border-radius: 999px;
+  padding: 7px 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #1de9e933;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .experienceWrapper {
+    padding: 32px 0 24px 0;
+  }
+  .experienceTitle {
+    font-size: 1.5rem;
+  }
+  .experienceSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+  .experienceTimeline {
+    padding-left: 12px;
+    gap: 32px;
+  }
+  .experienceDot {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  .experienceCard {
+    padding: 16px 10px;
+    max-width: 98vw;
+    font-size: 0.95rem;
+  }
+  .experienceHeader {
+    font-size: 0.95rem;
+  }
+  .experienceRole {
+    font-size: 1rem;
+  }
+  .experienceDate {
+    font-size: 0.9rem;
+  }
+  .experienceDesc {
+    font-size: 0.95rem;
+  }
+  .experienceTag {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+}

@@ -165,7 +165,56 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.sectionBlue}>
-        <h1>Experience</h1>
+        <div className={styles.experienceWrapper}>
+          <h1 className={styles.experienceTitle}>Professional Experience</h1>
+          <div className={styles.experienceSubtitle}>My journey through various roles and responsibilities.</div>
+          <div className={styles.experienceTimeline}>
+            <div className={styles.experienceItem}>
+              <div className={styles.experienceDot}></div>
+              <div className={styles.experienceCard}>
+                <div className={styles.experienceHeader}>
+                  <span className={styles.experienceCompanyIcon}>🏢</span>
+                  <span className={styles.experienceCompany}><b>Bendix</b></span>
+                  <span className={styles.experienceLocation}>(Avon OH, USA)</span>
+                </div>
+                <div className={styles.experienceRole}>Computer Science Engineer</div>
+                <div className={styles.experienceDate}><span className={styles.experienceDateIcon}>📅</span> May 2025 – September 2025</div>
+                <div className={styles.experienceDesc}>
+                  Contributed to the development and setup of a Hardware-in-the-Loop (HIL) system, focusing on configuration using CAPL scripting and XML-based communication. Developed VBA tools to streamline employee workflows and support the implementation of Kaizen continuous improvement techniques.
+                </div>
+                <div className={styles.experienceTagsRow}>
+                  <span className={styles.experienceTag}>CANopen</span>
+                  <span className={styles.experienceTag}>Vector</span>
+                  <span className={styles.experienceTag}>Jira</span>
+                  <span className={styles.experienceTag}>Perl</span>
+                  <span className={styles.experienceTag}>XML</span>
+                  <span className={styles.experienceTag}>CAPL</span>
+                  <span className={styles.experienceTag}>VBA</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.experienceItem}>
+              <div className={styles.experienceDot}></div>
+              <div className={styles.experienceCard}>
+                <div className={styles.experienceHeader}>
+                  <span className={styles.experienceCompanyIcon}>🏢</span>
+                  <span className={styles.experienceCompany}><b>Ellen Trivanoch Aquatic Center</b></span>
+                  <span className={styles.experienceLocation}>(Avon Lake OH, USA)</span>
+                </div>
+                <div className={styles.experienceRole}>LifeGuard Supervisor</div>
+                <div className={styles.experienceDate}><span className={styles.experienceDateIcon}>📅</span> May 2020 – September 2024</div>
+                <div className={styles.experienceDesc}>
+                  Oversaw daily pool operations, ensuring the safety of all patrons and adherence to facility protocols. Trained and supervised a team of lifeguards, coordinated schedules, and responded effectively to emergency situations. Implemented safety drills, maintained equipment, and provided excellent customer service to guests, fostering a safe and welcoming environment.
+                </div>
+                <div className={styles.experienceTagsRow}>
+                  <span className={styles.experienceTag}>Team Leader</span>
+                  <span className={styles.experienceTag}>Problem-Solving</span>
+                  <span className={styles.experienceTag}>Attention to Detail</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className={styles.sectionWhite}>
         <h1>Projects</h1>
