@@ -511,3 +511,112 @@
     justify-content: flex-start;
   }
 }
+
+.techArsenalWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.techSectionTitle {
+  color: #ff4b82;
+  font-size: 2.1rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: 900;
+  margin: 36px 0 18px 0;
+  letter-spacing: 1px;
+}
+
+.techCardRow {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.techCard {
+  background: #181f2a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 32px 36px 24px 36px;
+  min-width: 160px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1rem;
+  color: #eaf6fb;
+  font-weight: 600;
+  margin-bottom: 12px;
+  transition: transform 0.15s;
+}
+.techCard:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px #1de9e9aa;
+}
+
+.techIcon {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+  color: #1de9e9;
+  text-shadow: 0 0 8px #1de9e9cc;
+}
+
+.techPillRow {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 18px 0 0 0;
+}
+
+.techPill {
+  background: #232b3a;
+  color: #1de9e9;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  border-radius: 999px;
+  padding: 10px 22px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #1de9e933;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .techArsenalWrapper {
+    padding: 32px 0 16px 0;
+    align-items: center;
+  }
+  .techSectionTitle {
+    font-size: 1.4rem;
+    margin: 28px 0 12px 0;
+  }
+  .techCardRow {
+    gap: 14px;
+    justify-content: center;
+  }
+  .techCard {
+    min-width: 120px;
+    max-width: 160px;
+    padding: 18px 12px 14px 12px;
+    font-size: 0.95rem;
+  }
+  .techIcon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .techPillRow {
+    gap: 8px;
+  }
+  .techPill {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}

@@ -125,7 +125,44 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.sectionWhite}>
-        <h1>Tech Arsenal</h1>
+        <div className={styles.techArsenalWrapper}>
+          <h2 className={styles.techSectionTitle}>Languages</h2>
+          <div className={styles.techCardRow}>
+            <div className={styles.techCard}><span className={styles.techIcon}>💻</span><span>C/C++</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🟨</span><span>JavaScript</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🌐</span><span>HTML5</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🎨</span><span>CSS3</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🗄️</span><span>SQL</span></div>
+          </div>
+
+          <h2 className={styles.techSectionTitle}>Frameworks & Libraries</h2>
+          <div className={styles.techCardRow}>
+            <div className={styles.techCard}><span className={styles.techIcon}>⚛️</span><span>React JS</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🟩</span><span>Node JS</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🚂</span><span>Express JS</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>💨</span><span>Tailwind CSS</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🌐</span><span>WordPress</span></div>
+          </div>
+
+          <h2 className={styles.techSectionTitle}>Tools & Platforms</h2>
+          <div className={styles.techCardRow}>
+            <div className={styles.techCard}><span className={styles.techIcon}>🍃</span><span>MongoDB</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🔥</span><span>Firebase</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>🐙</span><span>Git & GitHub</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>📝</span><span>VS Code</span></div>
+            <div className={styles.techCard}><span className={styles.techIcon}>☁️</span><span>Google Cloud Platform</span></div>
+          </div>
+
+          <h2 className={styles.techSectionTitle}>Core Competencies</h2>
+          <div className={styles.techPillRow}>
+            <span className={styles.techPill}>Problem Solving</span>
+            <span className={styles.techPill}>Presentations</span>
+            <span className={styles.techPill}>Team Leadership</span>
+            <span className={styles.techPill}>Event Hosting</span>
+            <span className={styles.techPill}>Agile Methodologies</span>
+            <span className={styles.techPill}>Sales</span>
+          </div>
+        </div>
       </section>
       <section className={styles.sectionBlue}>
         <h1>Experience</h1>
